@@ -69,6 +69,19 @@ int main()
 	printf("字符串值 = %s, 整型值 = %d\n", str, val);
 
 
+	//C 库函数 long int atol(const char *str) 把参数 str 所指向的字符串转换为一个长整数（类型为 long int 型）
+	long  val2 = 1;
+	char str2[20];
+
+	strcpy(str2, "123897894687");
+	val2 = atol(str2);
+	printf("字符串值 = %s, 长整型值 = %ld\n", str2, val2);
+
+	strcpy(str2, "run");
+	val2 = atol(str2);
+	printf("字符串值 = %s, 长整型值 = %ld\n", str2, val2);
+
+
 	//*************************计时结束***************************************
 	runend();
 
